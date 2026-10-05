@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>1005-CSS容器設定</title>
+	<style>
+		/*	容器 BOX
+			box-sizing: 寬高預設是 content-box，也可以改成 border-box;
+
+			由內而外是 content內容(寬高)/padding填充/border框線/margin邊界
+			除了內容，分別可以設定 上top 右right 下bottom 左left
+			框線再分 粗細(width) 樣式(style) 顏色(color)
+			框線樣式常見有四種 solid實線 dashed虛線 dotted點點 double雙線
+			透明色：transparent
+
+			border-radius(圓角矩形的半徑)
+		*/
+		#d1 {
+			width:100px;
+			height:100px;
+			background-color: lightgray;
+			border: 5px solid black;
+			/* border-color: red yellow green blue;
+			border-width: 10px;
+			border-style: solid/dashed/dotted/double; */
+			padding: 10px 50px;
+			margin-bottom: 20px;
+		}
+		#d2 {
+			border:1px solid black;
+			height: 100px;
+			width: 200px;
+			margin: 20px;
+			border-radius: 50px;/*絕對單位*/
+		}
+		#d3 {
+			border:1px solid black;
+			height: 100px;
+			width: 200px;
+			margin: 20px;
+			border-radius: 50%;/*相對單位*/
+		}
+		#d4 {
+			border: 50px solid black;
+			height: 0px;
+			width: 0px;
+			margin: 20px;
+			border-color: red yellow green blue;
+			border-width: 20px 0px 60px 80px;
+		}
+		#diamond1 {
+			width: 50px;
+			height: 0px;
+			border: 30px solid transparent;
+			border-bottom-color: lightblue;
+			border-top-width: 0;
+		}
+		#diamond2 {
+			width: 0px;
+			height: 0px;
+			border: 55px solid transparent;
+			border-top-color: lightblue;
+			border-bottom-width: 0;
+		}
+		#tree1 {
+			width: 0px;
+			height: 0px;
+			border: 40px solid transparent;
+			border-bottom-color: green;
+			border-top-width: 0;
+			margin-left:20px;
+		}
+		#tree2 {
+			width: 20px;
+			height: 0px;
+			border: 40px solid transparent;
+			border-bottom-color: green;
+			border-top-width: 0;
+			margin-left:10px;
+		}
+		#tree3 {
+			width: 40px;
+			height: 0px;
+			border: 40px solid transparent;
+			border-bottom-color: green;
+			border-top-width: 0;
+		}
+		#tree4 {
+			width: 40px;
+			height: 50px;
+			background-color: brown;
+			margin-left:40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1">內容文字</div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>
+	<hr>
+	<div id="diamond1"></div>
+	<div id="diamond2"></div>
+	<hr>
+	<div id="tree1"></div>
+	<div id="tree2"></div>
+	<div id="tree3"></div>
+	<div id="tree4"></div>
+	<hr>
+	作業：自定創意圖
+</body>
+</html>
